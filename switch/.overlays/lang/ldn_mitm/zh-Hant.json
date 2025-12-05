@@ -1,0 +1,7 @@
+{
+    "PluginName": "連線外掛",
+    "NotLoadedErrorMainGuiListItemText": "ldn_mitm外掛沒有載入。",
+    "WrongStateErrorMainGuiListItemText": "錯誤的狀態",
+    "LoggingToggleListItemText": "日誌",
+    "EnabledToggleListItemText": "啟用"
+}

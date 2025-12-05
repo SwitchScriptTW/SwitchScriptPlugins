@@ -1,0 +1,19 @@
+{
+    "PluginName": "底座模式",
+    "SaltySDNotRunningGuiTestCustomDrawerText": "SaltyNX沒有執行！",
+    "CheckGameClosedGuiTestCustomDrawerText": "遊戲已關閉！Overlay外掛停用！",
+    "CheckNoGameRunningGuiTestCustomDrawerText": "遊戲沒有執行！Overlay外掛停用！",
+    "GameRunningGuiTestCustomDrawerText": "遊戲正在執行。",
+    "PlugNotRunningGuiTestCustomDrawerText": "ReverseNX-RT外掛沒有執行！",
+    "PlugRunningGuiTestCustomDrawerText": "ReverseNX-RT正在執行。",
+    "GameNotCheckAnyModeGuiTestCustomDrawerText": "遊戲沒有檢查任何模式！",
+    "ChangeSystemControlGuiTestListItemText": "更改系統控制",
+    "ChangeModeGuiTestListItemText": "更改模式",
+    "SaveSettingsGuiTestListItemText": "儲存目前設定",
+    "SettingSavedSuccessGuiTestCustomDrawerText": "設定儲存成功！",
+    "SettingSavedFailGuiTestCustomDrawerText": "設定儲存失敗！",
+    "UpdateDockModeGuiTestListItemText": "模式：底座",
+    "UpdateHandleModeGuiTestListItemText": "模式：掌機",
+    "UpdateSystemControlGuiTestListItemText": "由系統控制：是",
+    "UpdateNotSystemControlGuiTestListItemText": "由系統控制：否"
+}
