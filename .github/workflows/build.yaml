@@ -1,9 +1,10 @@
-name: Build and Release Switch ZIP
+name: Build and Release ZIP
 
 on:
   push:
-    paths:
-      - 'switch/**'
+    paths-ignore:
+      - '.github/**'
+      - 'README.md'
   workflow_dispatch:
 
 permissions:
@@ -24,10 +25,12 @@ jobs:
           echo "DATE=$DATE" >> $GITHUB_ENV
           echo "TAG_NAME=$DATE" >> $GITHUB_ENV
 
-      - name: Zip switch folder
+      - name: Zip repository (exclude .github and README.md)
         run: |
-          zip -r lang.zip ./switch
-          ls -lh lang.zip
+          zip -r autobuild.zip . \
+            -x "./.github/*" \
+            -x "./README.md"
+          ls -lh autobuild.zip
 
       - name: Create release
         uses: ncipollo/release-action@v1
@@ -38,7 +41,7 @@ jobs:
           commit: main
           token: ${{ secrets.GITHUB_TOKEN }}
           body: "自動生成"
-          artifacts: "lang.zip"
+          artifacts: "autobuild.zip"
 
       - name: Remove old Releases
         uses: dev-drprasad/delete-older-releases@v0.3.2
